@@ -1,33 +1,33 @@
-const gradePercent = 83; // Declares value of the student's percentage grade.
+const gradePercent = 105.3; // Declares value of the student's percentage grade.
 
-if (gradePercent <= 100, gradePercent > 84) { // Assigns a student an A+ letter grade if their percentage grade is greater than 85% and less than or equal to 100%.
+if (gradePercent <= 100 && gradePercent > 84) { // Assigns a student an A+ letter grade if their percentage grade is greater than 85% and less than or equal to 100%.
     const gradeLetter = "A+";
     console.log("Student's final grade is an " + gradeLetter + ", student passes with distinction.");
-} else if (gradePercent < 85, gradePercent > 79) { // Assigns a student an A letter grade if their percentage grade is between 85% and 79%.
+} else if (gradePercent < 85 && gradePercent > 79) { // Assigns a student an A letter grade if their percentage grade is between 85% and 79%.
     const gradeLetter = "A";
     console.log("Student's final grade is an " + gradeLetter + ", student passes with distinction.");
-} else if (gradePercent < 80, gradePercent > 74) { // Assigns a student an A letter grade if their percentage grade is between 80% and 74%.
+} else if (gradePercent < 80 && gradePercent > 74) { // Assigns a student an A letter grade if their percentage grade is between 80% and 74%.
     const gradeLetter = "A-";
     console.log("Student's final grade is an " + gradeLetter + ", student passes with distinction.");
-} else if (gradePercent < 75, gradePercent > 69) { // Assigns a student an B+ letter grade if their percentage grade is between 75% and 69%.
+} else if (gradePercent < 75 && gradePercent > 69) { // Assigns a student an B+ letter grade if their percentage grade is between 75% and 69%.
     const gradeLetter = "B+";
     console.log("Student's final grade is an " + gradeLetter + ", student passes with merit.");
-} else if (gradePercent < 70, gradePercent > 64) { // Assigns a student a B letter grade if their percentage grade is between 70% and 64%.
+} else if (gradePercent < 70 && gradePercent > 64) { // Assigns a student a B letter grade if their percentage grade is between 70% and 64%.
     const gradeLetter = "B";
     console.log("Student's final grade is an " + gradeLetter + ", student passes with merit.");
-} else if (gradePercent < 65, gradePercent > 59) { // Assigns a student a B- letter grade if their percentage grade is between 65% and 59%.
+} else if (gradePercent < 65 && gradePercent > 59) { // Assigns a student a B- letter grade if their percentage grade is between 65% and 59%.
     const gradeLetter = "B-";
     console.log("Student's final grade is an " + gradeLetter + ", student passes with merit.");
-} else if (gradePercent < 60, gradePercent > 54) { // Assigns a student a C+ letter grade if their percentage grade is between 60% and 54%.
+} else if (gradePercent < 60 && gradePercent > 54) { // Assigns a student a C+ letter grade if their percentage grade is between 60% and 54%.
     const gradeLetter = "C+";
     console.log("Student's final grade is an " + gradeLetter + ", student passes.");
-} else if (gradePercent < 55, gradePercent > 49) { // Assigns a student a C letter grade if their percentage grade is between 55% and 49%.
+} else if (gradePercent < 55 && gradePercent > 49) { // Assigns a student a C letter grade if their percentage grade is between 55% and 49%.
     const gradeLetter = "C";
     console.log("Student's final grade is an " + gradeLetter + ", student passes.");
-} else if (gradePercent < 50, gradePercent > 39) { // Assigns a student a D letter grade if their percentage grade is between 50% and 39%.
+} else if (gradePercent < 50 && gradePercent > 39) { // Assigns a student a D letter grade if their percentage grade is between 50% and 39%.
     const gradeLetter = "D";
     console.log("Student's final grade is an " + gradeLetter + ", student fails.");
-} else if (gradePercent < 40, gradePercent >= 0) { // Assigns a student an letter grade if their percentage grade is less than 40% and greater than or equal to 0%.
+} else if (gradePercent < 40 && gradePercent >= 0) { // Assigns a student an letter grade if their percentage grade is less than 40% and greater than or equal to 0%.
     const gradeLetter = "E";
     console.log("Student's final grade is an " + gradeLetter + ", student fails.");
 } else { // Assigns a student null for their letter grade if their percentage grade is does not satisfy any number comparisons.
@@ -181,6 +181,71 @@ switch (gradePercent) {
     case 1:
     case 0:
         if (gradePercent < 40, gradePercent >= 0) { // Assigns a student an letter grade if their percentage grade is less than 40% and greater than or equal to 0%.
+            const gradeLetter = "E";
+            console.log("Student's final grade is an " + gradeLetter + ", student fails.");
+        }
+        break;
+    default: // Assigns a student null for their letter grade if their percentage grade is does not satisfy any number comparisons.
+        const gradeLetter = null;
+        console.log("Student's percentage grade is invalid");
+}
+
+switch (true) {
+    case gradePercent <= 100 && gradePercent >= 85:
+        if (gradePercent <= 100 && gradePercent >= 85) { // Assigns a student an A+ letter grade if their percentage grade is greater than 85% and less than or equal to 100%.
+            const gradeLetter = "A+";
+            console.log("Student's final grade is an " + gradeLetter + ", student passes with distinction.");
+        }
+    case gradePercent < 85 && gradePercent >= 80:
+        if (gradePercent < 85 && gradePercent >= 80) { // Assigns a student an A letter grade if their percentage grade is between 85% and 79%.
+            const gradeLetter = "A";
+            console.log("Student's final grade is an " + gradeLetter + ", student passes with distinction.");
+        }
+        break;
+    case gradePercent < 80 && gradePercent >= 75:
+        if (gradePercent < 80 && gradePercent >= 75) { // Assigns a student an A letter grade if their percentage grade is between 80% and 74%.
+            const gradeLetter = "A-";
+            console.log("Student's final grade is an " + gradeLetter + ", student passes with distinction.");
+        }
+        break;
+    case gradePercent < 75 && gradePercent >= 70:
+        if (gradePercent < 75 && gradePercent >= 70) { // Assigns a student an B+ letter grade if their percentage grade is between 75% and 69%.
+            const gradeLetter = "B+";
+            console.log("Student's final grade is an " + gradeLetter + ", student passes with merit.");
+        }
+        break;
+    case gradePercent < 70 && gradePercent >= 65:
+        if (gradePercent < 70 && gradePercent >= 65) { // Assigns a student a B letter grade if their percentage grade is between 70% and 64%.
+            const gradeLetter = "B";
+            console.log("Student's final grade is an " + gradeLetter + ", student passes with merit.");
+        }
+        break;
+    case gradePercent < 65 && gradePercent >= 60:
+        if (gradePercent < 65 && gradePercent >= 60) { // Assigns a student a B- letter grade if their percentage grade is between 65% and 59%.
+            const gradeLetter = "B-";
+            console.log("Student's final grade is an " + gradeLetter + ", student passes with merit.");
+        }
+        break;
+    case gradePercent < 60 && gradePercent >= 55:
+        if (gradePercent < 60 && gradePercent >= 55) { // Assigns a student a C+ letter grade if their percentage grade is between 60% and 54%.
+            const gradeLetter = "C+";
+            console.log("Student's final grade is an " + gradeLetter + ", student passes.");
+        }
+        break;
+    case gradePercent < 55 && gradePercent >= 50:
+        if (gradePercent < 55 && gradePercent >= 50) { // Assigns a student a C letter grade if their percentage grade is between 55% and 49%.
+            const gradeLetter = "C";
+            console.log("Student's final grade is an " + gradeLetter + ", student passes.");
+        }
+        break;
+    case gradePercent < 50 && gradePercent >= 40:
+        if (gradePercent < 50 && gradePercent >= 40) { // Assigns a student a D letter grade if their percentage grade is between 50% and 39%.
+            const gradeLetter = "D";
+            console.log("Student's final grade is an " + gradeLetter + ", student fails.");
+        }
+        break;
+    case gradePercent < 40 && gradePercent >= 0:
+        if (gradePercent < 40 && gradePercent >= 0) { // Assigns a student an letter grade if their percentage grade is less than 40% and greater than or equal to 0%.
             const gradeLetter = "E";
             console.log("Student's final grade is an " + gradeLetter + ", student fails.");
         }
